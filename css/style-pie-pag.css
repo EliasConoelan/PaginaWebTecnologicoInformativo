@@ -1,0 +1,53 @@
+
+.menu2{
+    width: 100%;
+    background: rgb(34, 35, 36);
+    
+}
+/*--evento--*/
+.menu2 ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;/*Ordena en listas seguidas*/
+    justify-content: center;
+    /*justify-content: flex-end;*/
+    /*flex-direction: row;Por defecto es una fila*/
+}
+.menu2 li:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu2 li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+/*Cuando su ancho maximo es 768 px*/
+@media (max-width: 768px){
+    .menu2{
+        display: block;
+    }
+    .menu2 ul {
+        flex-direction: column;/*La fila se convierte en columna*/
+    }
+
+    .menu2 li {
+        border-top: 1px solid rgba(31, 29, 29, 0.3);
+    }
+    
+}
+.menu2 ul li a #logo{
+    width: 120px;
+    height: 60px;
+}
+.menu2 ul #logo-li{
+    display: block;
+    padding: 1px 1px;
+}
+.menu2 ul li #logo-a{
+    display: block;
+    padding: 1px 1px;
+
+}
